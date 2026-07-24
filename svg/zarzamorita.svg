@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 650" role="img" aria-labelledby="title desc">
+  <title id="title">Cheesecake de zarzamora para colorear</title>
+  <desc id="desc">Ilustración vectorial de un cheesecake con piezas independientes.</desc>
+
+  <style>
+    .pieza {
+      fill: #ffffff;
+      stroke: #33263d;
+      stroke-width: 6;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+      cursor: pointer;
+      transition: fill .2s ease, transform .15s ease;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .pieza:hover { transform: scale(1.02); }
+    .detalle {
+      fill: none;
+      stroke: #33263d;
+      stroke-width: 5;
+      stroke-linecap: round;
+      pointer-events: none;
+    }
+    .brillo {
+      fill: #ffffff;
+      stroke: #33263d;
+      stroke-width: 3;
+      pointer-events: none;
+    }
+  </style>
+
+  <!-- Plato -->
+  <ellipse id="plato" class="pieza" data-color="#d9d9e8" cx="400" cy="540" rx="310" ry="72"/>
+  <ellipse class="detalle" cx="400" cy="530" rx="250" ry="46"/>
+
+  <!-- Base -->
+  <path id="base" class="pieza" data-color="#c98b45"
+        d="M185 430 Q190 475 230 495 Q400 545 570 495 Q610 475 615 430
+           L600 390 Q400 435 200 390 Z"/>
+
+  <!-- Relleno -->
+  <path id="relleno" class="pieza" data-color="#f5dfb8"
+        d="M200 300 Q400 245 600 300 L615 430 Q400 485 185 430 Z"/>
+
+  <!-- Cobertura -->
+  <path id="cobertura" class="pieza" data-color="#76266f"
+        d="M200 300 Q230 245 315 235 Q400 218 485 235 Q570 245 600 300
+           Q575 345 505 355 Q400 375 295 355 Q225 345 200 300 Z"/>
+
+  <!-- Goteos -->
+  <path id="goteo1" class="pieza" data-color="#76266f"
+        d="M245 325 Q260 320 272 328 L270 380 Q267 405 248 401 Q232 398 236 375 Z"/>
+  <path id="goteo2" class="pieza" data-color="#76266f"
+        d="M360 350 Q375 344 388 350 L387 413 Q382 438 364 432 Q348 427 353 405 Z"/>
+  <path id="goteo3" class="pieza" data-color="#76266f"
+        d="M515 340 Q530 334 543 341 L540 390 Q536 415 518 409 Q502 404 507 383 Z"/>
+
+  <!-- Crema -->
+  <path id="crema1" class="pieza" data-color="#fff8e8"
+        d="M220 275 Q205 260 218 243 Q222 223 244 224 Q255 205 274 218
+           Q294 211 302 232 Q323 240 312 260 Q308 280 285 281 Q253 291 220 275 Z"/>
+  <path id="crema2" class="pieza" data-color="#fff8e8"
+        d="M330 248 Q315 230 329 213 Q332 190 355 191 Q367 169 389 184
+           Q411 174 421 197 Q444 204 434 227 Q430 249 404 251 Q367 264 330 248 Z"/>
+  <path id="crema3" class="pieza" data-color="#fff8e8"
+        d="M485 267 Q470 248 484 231 Q487 208 510 209 Q522 188 543 202
+           Q565 193 575 216 Q598 223 588 246 Q584 268 558 270 Q521 283 485 267 Z"/>
+
+  <!-- Hojas -->
+  <path id="hoja1" class="pieza" data-color="#56844d"
+        d="M415 150 Q450 112 491 128 Q472 169 422 171 Z"/>
+  <path id="hoja2" class="pieza" data-color="#6a9b55"
+        d="M375 154 Q341 112 301 129 Q321 169 370 173 Z"/>
+  <path class="detalle" d="M422 163 Q452 146 480 133"/>
+  <path class="detalle" d="M368 164 Q339 147 312 134"/>
+
+  <!-- Moras -->
+  <g id="mora1">
+    <circle id="mora1a" class="pieza" data-color="#51204f" cx="280" cy="214" r="27"/>
+    <circle id="mora1b" class="pieza" data-color="#6e2869" cx="252" cy="229" r="25"/>
+    <circle id="mora1c" class="pieza" data-color="#6e2869" cx="307" cy="232" r="25"/>
+    <circle id="mora1d" class="pieza" data-color="#82347d" cx="279" cy="250" r="27"/>
+    <circle id="mora1e" class="pieza" data-color="#82347d" cx="279" cy="226" r="22"/>
+  </g>
+
+  <g id="mora2">
+    <circle id="mora2a" class="pieza" data-color="#51204f" cx="390" cy="160" r="27"/>
+    <circle id="mora2b" class="pieza" data-color="#6e2869" cx="361" cy="177" r="25"/>
+    <circle id="mora2c" class="pieza" data-color="#6e2869" cx="419" cy="178" r="25"/>
+    <circle id="mora2d" class="pieza" data-color="#82347d" cx="390" cy="200" r="27"/>
+    <circle id="mora2e" class="pieza" data-color="#82347d" cx="390" cy="178" r="22"/>
+  </g>
+
+  <g id="mora3">
+    <circle id="mora3a" class="pieza" data-color="#51204f" cx="507" cy="205" r="27"/>
+    <circle id="mora3b" class="pieza" data-color="#6e2869" cx="478" cy="221" r="25"/>
+    <circle id="mora3c" class="pieza" data-color="#6e2869" cx="536" cy="223" r="25"/>
+    <circle id="mora3d" class="pieza" data-color="#82347d" cx="507" cy="244" r="27"/>
+    <circle id="mora3e" class="pieza" data-color="#82347d" cx="507" cy="222" r="22"/>
+  </g>
+
+  <g id="mora4">
+    <circle id="mora4a" class="pieza" data-color="#51204f" cx="355" cy="245" r="24"/>
+    <circle id="mora4b" class="pieza" data-color="#6e2869" cx="330" cy="260" r="23"/>
+    <circle id="mora4c" class="pieza" data-color="#6e2869" cx="380" cy="260" r="23"/>
+    <circle id="mora4d" class="pieza" data-color="#82347d" cx="355" cy="278" r="24"/>
+  </g>
+
+  <g id="mora5">
+    <circle id="mora5a" class="pieza" data-color="#51204f" cx="455" cy="255" r="24"/>
+    <circle id="mora5b" class="pieza" data-color="#6e2869" cx="430" cy="270" r="23"/>
+    <circle id="mora5c" class="pieza" data-color="#6e2869" cx="480" cy="270" r="23"/>
+    <circle id="mora5d" class="pieza" data-color="#82347d" cx="455" cy="288" r="24"/>
+  </g>
+
+  <!-- Detalles -->
+  <path class="detalle" d="M190 430 Q400 485 610 430"/>
+  <path class="detalle" d="M235 462 Q270 480 305 486"/>
+  <path class="detalle" d="M332 493 Q370 502 408 502"/>
+  <path class="detalle" d="M438 500 Q478 496 515 482"/>
+
+  <ellipse class="brillo" cx="270" cy="211" rx="6" ry="9" transform="rotate(-35 270 211)"/>
+  <ellipse class="brillo" cx="380" cy="157" rx="6" ry="9" transform="rotate(-35 380 157)"/>
+  <ellipse class="brillo" cx="497" cy="202" rx="6" ry="9" transform="rotate(-35 497 202)"/>
+</svg>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Zarzamorita - Colorea La Dulce Chispa</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body class="pagina-juego">
+
+  <header class="encabezado-juego">
+
+    <a class="boton-regresar" href="menu.html">
+      ← Menú
+    </a>
+
+    <div class="marca-juego">
+      <p class="marca-superior">La Dulce Chispa</p>
+
+      <h1>Colorea Zarzamorita</h1>
+
+      <p>
+        Elige un color y pinta todas las partes del cheesecake.
+      </p>
+    </div>
+
+    <button
+      id="reiniciar-juego"
+      class="boton-reiniciar"
+      type="button">
+      Reiniciar
+    </button>
+
+  </header>
+
+  <main class="contenedor-juego">
+
+    <section class="panel-dibujo">
+
+      <div class="cabecera-panel">
+
+        <div>
+          <span class="etiqueta-paso">Paso 1</span>
+
+          <h2>
+            Elige un color y toca una pieza
+          </h2>
+        </div>
+
+        <div class="contador-progreso">
+          <strong id="porcentaje">0%</strong>
+          <span>completado</span>
+        </div>
+
+      </div>
+
+      <div class="barra-progreso">
+        <div
+          id="relleno-progreso"
+          class="relleno-progreso">
+        </div>
+      </div>
+
+      <div class="zona-ilustraciones">
+
+        <article class="tarjeta-ilustracion">
+
+          <h3>Tu dibujo</h3>
+
+          <div class="contenedor-svg">
+
+            <object
+              id="dibujo-zarzamorita"
+              type="image/svg+xml"
+              data="svg/zarzamorita.svg">
+
+              Tu navegador no pudo cargar el dibujo.
+
+            </object>
+
+          </div>
+
+          <p
+            id="mensaje-juego"
+            class="mensaje-juego">
+
+            Selecciona un color para comenzar.
+
+          </p>
+
+        </article>
+
+        <article class="tarjeta-ilustracion tarjeta-referencia">
+
+          <h3>Inspiración</h3>
+
+          <img
+            src="imagenes/zarzamorita.jpeg"
+            alt="Cheesecake Zarzamorita">
+
+          <p>
+            No tiene que quedar idéntico.
+            Haz tu propia versión.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <aside class="panel-colores">
+
+      <span class="etiqueta-paso">Paso 2</span>
+
+      <h2>Paleta de colores</h2>
+
+      <p class="instruccion-paleta">
+        Primero toca un color.
+        Después toca una parte del cheesecake.
+      </p>
+
+      <div
+        id="paleta"
+        class="paleta">
+
+        <button
+          class="color-paleta"
+          type="button"
+          data-color="#51204f"
+          title="Mora oscura">
+
+          <span style="background-color:#51204f"></span>
+          <small>1</small>
+
+        </button>
+
+        <button
+          class="color-paleta"
+          type="button"
+          data-color="#76266f"
+          title="Zarzamora">
+
+          <span style="background-color:#76266f"></span>
+          <small>2</small>
+
+        </button>
+
+        <button
+          class="color-paleta"
+          type="button"
+          data-color="#82347d"
+          title="Mora clara">
+
+          <span style="background-color:#82347d"></span>
+          <small>3</small>
+
+        </button>
+
+        <button
+          class="color-paleta"
+          type="button"
+          data-color="#fff8e8"
+          title="Crema">
+
+          <span style="background-color:#fff8e8"></span>
+          <small>4</small>
+
+        </button>
+
+        <button
+          class="color-paleta"
+          type="button"
+          data-color="#f5dfb8"
+          title="Cheesecake">
+
+          <span style="background-color:#f5dfb8"></span>
+          <small>5</small>
+
+        </button>
+
+        <button
+          class="color-paleta"
+          type="button"
+          data-color="#c98b45"
+          title="Galleta">
+
+          <span style="background-color:#c98b45"></span>
+          <small>6</small>
+
+        </button>
+
+        <button
+          class="color-paleta"
+          type="button"
+          data-color="#56844d"
+          title="Hoja verde">
+
+          <span style="background-color:#56844d"></span>
+          <small>7</small>
+
+        </button>
+
+        <button
+          class="color-paleta"
+          type="button"
+          data-color="#d9d9e8"
+          title="Plato">
+
+          <span style="background-color:#d9d9e8"></span>
+          <small>8</small>
+
+        </button>
+
+      </div>
+
+      <div class="color-seleccionado">
+
+        <span id="muestra-color"></span>
+
+        <div>
+          <small>Color elegido</small>
+          <strong id="nombre-color">Ninguno</strong>
+        </div>
+
+      </div>
+
+      <button
+        id="boton-pista"
+        class="boton-secundario"
+        type="button">
+
+        Mostrar una pista
+
+      </button>
+
+    </aside>
+
+  </main>
+
+  <section
+    id="modal-premio"
+    class="modal-premio"
+    aria-hidden="true">
+
+    <div class="contenido-premio">
+
+      <div class="confeti">
+        🎉 ✨ 🍰 ✨ 🎉
+      </div>
+
+      <p class="marca-superior">
+        La Dulce Chispa
+      </p>
+
+      <h2>
+        ¡Zarzamorita completada!
+      </h2>
+
+      <p>
+        Terminaste el dibujo.
+        Ya puedes descubrir tu recompensa.
+      </p>
+
+      <button
+        id="ver-premio"
+        class="boton-premio"
+        type="button">
+
+        Ver mi premio
+
+      </button>
+
+      <button
+        id="cerrar-premio"
+        class="boton-cerrar-modal"
+        type="button">
+
+        Seguir viendo mi dibujo
+
+      </button>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
